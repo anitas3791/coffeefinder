@@ -110,15 +110,15 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnInfoWi
         boolean isNetworkEnabled = lm.isProviderEnabled(LocationManager.NETWORK_PROVIDER);
         boolean isGPSEnabled = lm.isProviderEnabled(LocationManager.GPS_PROVIDER);
         if (!isNetworkEnabled && !isGPSEnabled) {
-            showLocationDialog();
+            showLocationDialog(); //for example, if on airplane mode show dialog to turn on location settings
             return;
         }
         Location loc = lm.getLastKnownLocation(isNetworkEnabled == true ? LocationManager.NETWORK_PROVIDER : LocationManager.GPS_PROVIDER);
-        LatLng myLocation = new LatLng(loc.getLatitude(), loc.getLongitude()); //default is my location
+        LatLng myLocation = new LatLng(loc.getLatitude(), loc.getLongitude());
         latitude = new Double(loc.getLatitude()).toString();
         longitude = new Double(loc.getLongitude()).toString();
 
-        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 14)); //having a reasonable zoom
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(myLocation, 14)); //having a reasonable zoom near my location
         mMap.addMarker(new MarkerOptions()
                 .title(getResources().getString(R.string.location))
                 .position(myLocation));
