@@ -7,6 +7,7 @@ import retrofit.http.Query;
 
 /**
  * Created by asingh19 on 8/11/15.
+ * Makes FoursquareAPI requests for coffee
  */
 public interface CoffeeService {
     @GET("/v2/venues/explore")

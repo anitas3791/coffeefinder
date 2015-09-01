@@ -33,6 +33,10 @@ import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
+/**
+ * The app opens to MapsActivity which lays out the map with the coffee pins
+ */
+
 public class MapsActivity extends FragmentActivity implements GoogleMap.OnInfoWindowClickListener {
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
@@ -48,6 +52,9 @@ public class MapsActivity extends FragmentActivity implements GoogleMap.OnInfoWi
         setUpMapIfNeeded();
     }
 
+    /**
+     * Makes Foursquare API call for coffee shops using Retrofit each time the app is resumed
+     */
     @Override
     protected void onResume() {
         super.onResume();

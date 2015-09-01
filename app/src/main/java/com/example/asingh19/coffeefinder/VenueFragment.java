@@ -19,6 +19,9 @@ public class VenueFragment extends Fragment {
 
     String coffeeUrl = "http://cdn.foodbeast.com/content/uploads/2015/02/coffee-smell.jpeg";
 
+    /**
+      Setting details of venue screen with the marker that the user just clicked on
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.venue_detail, container, false);

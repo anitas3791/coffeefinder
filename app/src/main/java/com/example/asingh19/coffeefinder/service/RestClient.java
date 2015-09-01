@@ -5,6 +5,7 @@ import retrofit.RestAdapter;
 
 /**
  * Created by asingh19 on 8/11/15.
+ * This class uses Retrofit to set up the RestClient
  */
 public class RestClient {
 
@@ -22,7 +23,7 @@ public class RestClient {
     }
 
     private RestClient() {
-        RequestInterceptor requestInterceptor = new RequestInterceptor()
+        RequestInterceptor requestInterceptor = new RequestInterceptor() //this is added to every request
         {
             @Override
             public void intercept(RequestFacade request) {
