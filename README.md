@@ -1,5 +1,5 @@
 # coffeefinder
-Uses foursquare API's to find the best coffee spots near you!
+Uses foursquare API's to find the best coffee spots near you on a map!
 
 I did this project to try out Retrofit, Picasso and do location stuff in Android, as I hadn't done that before.
 Also wanted to check out what the Foursquare API's have to offer!
