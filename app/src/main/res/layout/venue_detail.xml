@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/venue_detail_parent"
+    style="@style/ParentLayout">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/Title"
+        android:text="@string/title"/>
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/Address"/>
+
+    <LinearLayout
+        android:id="@+id/ratings"
+        style="@style/HorizontalLayout.First">
+
+        <TextView
+            android:id="@+id/rating"
+            style="@style/RowText"
+            android:text="@string/rating"/>
+
+        <TextView
+            android:id="@+id/rating_number"
+            style="@style/RowText.Right"
+            android:text="@string/defaultRating"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/checkinCount"
+        style="@style/HorizontalLayout">
+
+        <TextView
+            android:id="@+id/checkins"
+            style="@style/RowText"
+            android:text="@string/checkins"/>
+
+        <TextView
+            android:id="@+id/checkins_number"
+            style="@style/RowText.Right"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/users"
+            style="@style/HorizontalLayout">
+
+        <TextView
+            android:id="@+id/usersVisted"
+            style="@style/RowText"
+            android:text="@string/usersVisited"/>
+
+        <TextView
+            android:id="@+id/users_number"
+            style="@style/RowText.Right" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usertips"
+        style="@style/HorizontalLayout">
+
+        <TextView
+            android:id="@+id/tips"
+            style="@style/RowText"
+            android:text="@string/tips"/>
+
+        <TextView
+            android:id="@+id/tips_number"
+            style="@style/RowText.Right" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/coffee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

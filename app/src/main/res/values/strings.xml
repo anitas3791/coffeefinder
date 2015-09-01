@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">CoffeeFinder</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title">Title</string>
+    <string name="rating">Rating:</string>
+    <string name="defaultRating">not rated</string>
+    <string name="checkins">Total Checkins:</string>
+    <string name="usersVisited">Total Users Visited:</string>
+    <string name="tips">Number of tips:</string>
+    <string name="location_unavailable">Location Unavailable</string>
+    <string name="enable_location">Would you like to enable your location settings?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="location">My location</string>
+    <string name="server_error">Server Unavailable</string>
+</resources>

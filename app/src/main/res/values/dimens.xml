@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_all">12sp</dimen>
+    <dimen name="title">26sp</dimen>
+    <dimen name="address">16sp</dimen>
+    <dimen name="regular_text">20sp</dimen>
+</resources>
